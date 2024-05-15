@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hmg_cabecera">
+        <nav class="hmg_menu">
+          <div class="hmg_logo">
+            <h1 class="hmg_titulo_dos" style="color: white">STARBUCKS</h1>
+          </div>
+    
+          <label for="hmg_menu_burger" class="hmg_label_burger">
+            <svg width="50px" height="50px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+              class="hmg_menu_mobile">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <path d="M4 6H20M4 12H14M4 18H9" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+              </g>
+            </svg>
+          </label>
+          <input type="checkbox" name="" id="hmg_menu_burger" class="hmg_menu_burger">
+          <ul class="hmg_menu_links">
+            <li class="hmg_menu_item"><a class="hmg_link" href="#inicio">Inicio</a></li>
+            <li class="hmg_menu_item"><a class="hmg_link" href="#informacion">Informacion</a></li>
+            <li class="hmg_menu_item"><a class="hmg_link" href="#reseñas">Reseñas</a></li>
+            <li class="hmg_menu_item"><a class="hmg_link" href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+    
+        <div class="hmg_brand" id="inicio">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/sco/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1200px-Starbucks_Corporation_Logo_2011.svg.png"
+            alt="logo" />
+    
+          <h1 class="hmg_titulo">Starbucks</h1>
+        </div>
+      </header>
+    
+      <section class="hmg_info" id="informacion">
+        <h2 class="hmg_info_titulo">Bienvenido a Starbucks</h2>
+        <p class="hmg_description">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt maiores
+          ea ipsa cupiditate voluptates? Atque architecto eaque eligendi. A ea
+          nostrum consequuntur, voluptatum eius cumque commodi cupiditate
+          doloribus quam earum molestias praesentium. Ducimus tenetur aspernatur
+          aperiam libero! Recusandae nesciunt, molestias corporis harum quisquam
+          accusamus vitae.
+        </p>
+    
+        <div class="hmg_about">
+          <article class="hmg_product_conatiner">
+            <div class="hmg_image">
+              <img
+                src="https://media.istockphoto.com/id/534200892/es/foto/composici%C3%B3n-con-taza-de-caf%C3%A9-y-granos-de-caf%C3%A9-starbucks.jpg?s=612x612&w=0&k=20&c=WSDU11LulbZyx3A3G9XUS4Y8VZ1uU0E-rB1UPq2anVc="
+                alt="" srcset="" />
+            </div>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+              autem eligendi est odio unde consectetur possimus libero quidem
+              voluptatum ullam.
+            </p>
+          </article>
+    
+          <article class="hmg_product_conatiner">
+            <div class="hmg_image">
+              <img
+                src="https://media.istockphoto.com/id/458582779/es/foto/starbucks-grande-16-oz-caf%C3%A9-con-una-galleta-de-mantequilla-de-cacahuete.jpg?s=612x612&w=0&k=20&c=ye_Cpc3XD98swf4WM8-FYN9B-xoSjpfrQjig2hHun1A="
+                alt="" srcset="" />
+            </div>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+              autem eligendi est odio unde consectetur possimus libero quidem
+              voluptatum ullam.
+            </p>
+          </article>
+    
+          <div class="hmg_video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/q3ovyqbfOzk?si=KvEViL17DFeljt7K"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen class="hmg_video"></iframe>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dolor
+              cum quibusdam velit quas ipsa.
+            </p>
+          </div>
+        </div>
+      </section>
+    
+      <section class="hmg_reseñas" id="reseñas">
+        <h2 class="hmg_reseñas-titulo">Reseñas</h2>
+    
+        <h5 class="hmg_reseñas-descripcion">Estas son las reseñas sobre nustros productos</h5>
+    
+        <div class="hmg_reseñas_container">
+        </div>
+    
+        <button class="hmg_button_reseña" onclick="createReseña()">Agregar Reseña</button>
+      </section>
+    
+      <section class="hmg_contact_us" id="contacto">
+        <h2 class="hmg_contact_us_titulo">Contactanos</h2>
+    
+        <div class="form">
+          <div class="hmg_form_container">
+            <div class="hmg_form1">
+              <input type="email" placeholder="Correo" id="correo" />
+              <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+            </div>
+    
+            <div class="hmg_form2">
+              <select name="pais" id="pais">
+                <option value="colombia">Colombia</option>
+                <option value="peru">Peru</option>
+              </select>
+              <select name="sexo" id="sexo">
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+              </select>
+              <input type="number" name="telefono" id="telefono" />
+            </div>
+          </div>
+    
+          <button onclick="formSubmit()">Enviar</button>
+        </div>
+      </section>
+    
+      <footer class="hmg_footer">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/sco/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1200px-Starbucks_Corporation_Logo_2011.svg.png"
+          alt="logo" width="10%" class="hmg_logo" />
+    
+        <div>
+          <div class="hmg_redes">
+            <p>Facebook</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="facebook"
+              width="20px" />
+          </div class="hmg_redes">
+    
+          <div class="hmg_redes">
+            <p>Instagram</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="instagram"
+              width="20px" />
+          </div>
+    
+          <div class="hmg_redes">
+            <p>Twitter</p>
+            <img src="https://upload.wikimedia.org/wikipedia/sco/9/9f/Twitter_bird_logo_2012.svg" alt="twitter"
+              width="20px" />
+          </div>
+        </div>
+      </footer>
+
+      <script src="main.js"></script>
+</body>
+</html>
